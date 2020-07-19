@@ -1,0 +1,245 @@
+@import url(../fonts/Abel/Abel-Regular.ttf);
+@import url(../fonts/Roboto/Roboto-Regular.ttf);
+@import url(./global.css);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header area */
+.header-area .navbar > a{
+    color: #fb0101;
+    font-weight: bold;
+}
+.navbar-brand{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+  }
+  
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+
+/* header area */
+
+
+/*contact area*/
+
+.main-section .contact-area{
+    background: #000000;
+    margin: 0;
+    height: 500px;
+}
+
+.main-section .contact-area > ul{
+    list-style-type: none;
+}
+
+.main-section .contact-area > ul li{
+    padding: 1rem 1rem;
+    background: transparent;
+}
+
+.main-section .contact-area > ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/*end contact area*/
+
+/* user profile */
+
+.main-section .user-profile .user-img{
+    border-radius: 6rem !important;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+}
+
+
+.main-section .user-profile .user-name > a{
+    font-size: 1.5rem !important;
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    padding: 20px 0;
+}
+/*end user profile*/
+
+
+/* new-list */
+.new-cost{
+    border: 2px solid #343a40;
+    margin-top: 5vh;
+}
+/* new-list */
+
+/* edit cost */
+
+.edit-cost{
+    border: 2px solid #343a40;
+    margin-top: 5vh;
+}
+
+@media (min-width: 767.98px) {
+    .navbar-margin{
+        margin-left: 15rem;
+    }
+  }
+/* edit cost */
+
+/* loggedin form */
+
+
+.loggedin-container{
+    height: 70vh;
+    background: #fffe;
+    margin-left: 35vw;
+    opacity: 0.8;
+    border: 1px solid #ddd;
+    position: relative;
+    z-index: 999;
+}
+
+
+.loggedin-container > h3{
+    position: relative;
+    color: #fb0101;
+}
+
+.loggedin-container > h3::before{
+    content: "";
+    position: absolute;
+    border-top: 1px solid #333333;
+    width: 5.5rem;
+    top: 4.5rem;
+    left: 7%;
+}
+
+.loggedin-container > h3::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid #333;
+    width: 5.5rem;
+    top: 4.5rem;
+    right: 7%;
+}
+
+
+.loggedin-section{
+    background: url(../img/local-icon/loggedin-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.loggedin-form{
+    width: 500px;
+    background: orange;
+    height: 500px;
+}
+
+
+/* loggedin form */
+
+/* sidebar */
+
+.sidebar{
+    position: absolute;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    z-index: 9999; /* Behind the navbar */
+    height: 90vh;
+    box-shadow: inset -1px 0 0 rgba(0,0,0,0.5);
+    background: whitesmoke;
+  }
+
+  .sidebar-sticky {
+    position: relative;
+    /* height:  */
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  
+/* sidebar */
+
+/* logout section */
+
+.logout-section{
+    background: url(../img/local-icon/loggedin-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logout-section h1{
+    font-size: 4rem;
+}
+
+/* end logout section */
+
+/* table */
+.main-section #table-data{
+    cursor: pointer;
+}
+
+.main-section #table-data > td:nth-child(4){
+    display: none;
+}
+
+
+.main-section table #table-data:hover td:nth-child(4){
+    display: block;
+}
+
+
+/* table */
+
+
+@media (max-width: 1024px){
+
+    .loggedin-section{
+        background-image: none;
+    }
+
+    .loggedin-container{
+        margin-left: 0;
+    }
+
+    .loggedin-container > h3::before{
+        opacity: 0;
+    }
+
+    .loggedin-container > h3::after{
+        display: none;
+    }
+    .sidebar{
+        top: 9.5vh;
+    }
+}
+
+
+@media (max-width: 768px){
+    .sidebar{
+        top: 8vh;
+        height: 100vh;
+    }
+    .logout-section h1{
+        font-size: 2rem;
+    }
+}
